@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoMotors | Concesionaria</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header>
+    <a class="logo" href="#inicio">Auto<span>Motors</span></a>
+    <nav aria-label="Menú principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#autos">Catálogo</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#formulario">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <h1>Encuentra el auto de tus sueños</h1>
+        <p>Los mejores vehículos nuevos y seminuevos al mejor precio del mercado.</p>
+        <a class="btn" href="#autos">Ver Catálogo</a>
+      </div>
+    </section>
+
+    <section class="catalogo" id="autos">
+      <h2 class="section-title">Nuestros Vehículos Destacados</h2>
+      <div class="cars">
+        <article class="car-card">
+          <div class="car-img"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=85" alt="Automóvil deportivo rojo"></div>
+          <div class="car-info">
+            <h3>Deportivo GT 2025</h3>
+            <div class="specs"><span>Gasolina</span><span>Automático</span><span>15,000 km</span></div>
+            <p class="price">$32,500 USD</p>
+            <a class="btn" href="#formulario">Más Información</a>
+          </div>
+        </article>
+        <article class="car-card">
+          <div class="car-img"><img src="https://images.unsplash.com/photo-1614200187524-dc4b892acabf?auto=format&fit=crop&w=900&q=85" alt="Vehículo deportivo negro"></div>
+          <div class="car-info">
+            <h3>SUV Familiar X-Trail</h3>
+            <div class="specs"><span>Híbrido</span><span>Automático</span><span>5,000 km</span></div>
+            <p class="price">$28,900 USD</p>
+            <a class="btn" href="#formulario">Más Información</a>
+          </div>
+        </article>
+        <article class="car-card">
+          <div class="car-img"><img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=900&q=85" alt="Sedán deportivo oscuro"></div>
+          <div class="car-info">
+            <h3>Sedán Ejecutivo Pro</h3>
+            <div class="specs"><span>Diésel</span><span>Manual</span><span>22,000 km</span></div>
+            <p class="price">$21,400 USD</p>
+            <a class="btn" href="#formulario">Más Información</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contacto" id="formulario">
+      <div class="contact-box">
+        <h2 class="section-title">Contáctanos</h2>
+        <p>Déjanos tus datos y te brindaremos más información.</p>
+        <form action="#" method="post">
+          <div class="form-grid">
+            <div class="field"><label for="nombre">Nombre completo</label><input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required></div>
+            <div class="field"><label for="correo">Correo electrónico</label><input id="correo" name="correo" type="email" placeholder="tucorreo@ejemplo.com" required></div>
+            <div class="field full"><label for="vehiculo">Vehículo de interés</label>
+              <select id="vehiculo" name="vehiculo"><option>Deportivo GT 2025</option><option>SUV Familiar X-Trail</option><option>Sedán Ejecutivo Pro</option></select>
+            </div>
+            <div class="field full"><label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" placeholder="Escribe tu consulta..."></textarea></div>
+          </div>
+          <button class="btn" type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer id="nosotros">
+    <h3>Auto<span>Motors</span> Concesionaria</h3>
+    <p>📍 Dirección: Av. Principal #123  |  Teléfono: 77931748  |  Correo: contacto@automotors.com</p>
+    <p class="copy">© 2026 AutoMotors. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
